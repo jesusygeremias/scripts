@@ -41,7 +41,7 @@ sudo apt-get install mysql-server mysql-client 1234 1234
 #sudo service mysql start
 
 #Run RubyMine
-sudo ./RubyMine*/bin/rubymine.sh -y
+#sudo ./RubyMine*/bin/rubymine.sh -y
 
 
 #Gemas:
