@@ -17,10 +17,17 @@ sudo apt-get install -y git-core subversion -y
 #Add Key
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 -y
 
-#Install RVM
-\curl -sSL https://get.rvm.io | bash -s 2.0.0 --rails --ruby -y
+#Opcion 1 para instalar Ruby con RVM y configuracion del mismo
+sudo apt-get install ruby irb rubygems rdoc
+curl -L https://get.rvm.io | bash -s stable  --ruby
+source ~/.rvm/scripts/rvm 
+rvm requirements
+rvm use ruby --default
+
+# Opcion 2 Install RVM
+#\curl -sSL https://get.rvm.io | bash -s 2.0.0 --rails --ruby -y
 #rvm install ruby-2.0.0 -y
-rvm use ruby-2.0.0
+#rvm use ruby-2.0.0
 
 #Download RubyMine
 wget https://download.jetbrains.com/ruby/RubyMine-8.0.3.tar.gz
